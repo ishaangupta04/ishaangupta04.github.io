@@ -2,15 +2,15 @@
 title: "Glitch BattleBot Armor Panels"
 excerpt: "Designed Modular Armor system for the Battle Bot GLITCH"
 header:
-  image: /assets/images/glitch/glitch-teaser.jpg
-  teaser: assets/images/glitch/glitch-teaser.jpg
+  image: /assets/images/glitch/glitch-teaser.JPG
+  teaser: assets/images/glitch/glitch-teaser.JPG
 sidebar:
   - title: "Role"
     image: 
     image_alt: 
     text: "Mechanical Engineer"
   - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "Re-Design Armor Panels to enable configurations and shock reduction"
 gallery:
   - url:
     image_path: 
