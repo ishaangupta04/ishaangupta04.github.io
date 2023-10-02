@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ishaan Gupta Project Portfolio
+title: Ishaan Gupta | Project Portfolio
 email: ishaan.gupta@berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
   A collection of personal, engineering team, and class projects over the course of my engineering journey.
@@ -29,7 +29,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -59,6 +59,7 @@ author:
   name   : "Ishaan Gupta"
   avatar : "/assets/images/Headshot.jpg"
   bio    : " A collection of personal, engineering team, and class projects over the course of my engineering journey."
+  location : "Berkeley, CA"
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
