@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A collection of personal, engineering team, and class projects over the course of my engineering journey.
 #twitter_username: username
 github_username: ishaangupta04
-minimal_mistakes_skin: default
+minimal_mistakes_skin: air
 search: true
 
 # Build settings
@@ -94,8 +94,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
   # _pages
   - scope:
