@@ -1,6 +1,6 @@
 main:
   - title: "Projects"
-    url: /portfolio/
+    url: /projects/
   - tile: "Posts"
     url: /posts/
   - title: "Tags"
