@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Ishaan Gupta"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/Headshot.jpg"
   bio    : " A collection of personal, engineering team, and class projects over the course of my engineering journey."
   links:
     # - label: "Website"
