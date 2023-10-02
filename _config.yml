@@ -109,9 +109,9 @@ defaults:
       layout: single
       author_profile: true
 
-category_archive:
+projects_archive:
   type: liquid
-  path: /categories/
+  path: /projects/
 tag_archive:
   type: liquid
   path: /tags/
