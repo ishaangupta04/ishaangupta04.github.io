@@ -1,5 +1,7 @@
 main:
   - title: "Projects"
+    url: /portfolio/
+  - tile: "Posts"
     url: /posts/
   - title: "Tags"
     url: /tags/
