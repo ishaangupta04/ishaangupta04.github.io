@@ -1,5 +1,8 @@
 ---
-title: Resume
-permalink: /resume/
+title: Projects
+layout: collection
+permalink: /projects/
+collection: projects
+entries_layout: grid
+classes: wide
 ---
-<embed src = "https://ishaangupta04.github.io/assets/documents/resume.pdf" type="application/pdf"/>
