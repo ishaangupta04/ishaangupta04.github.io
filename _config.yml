@@ -60,22 +60,28 @@ author:
   bio    : " A collection of personal, engineering team, and class projects over the course of my engineering journey."
   location : "Berkeley, CA"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ishaangupta04"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ishaan.gupta@berkeley.edu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ishaan-gupta-cal/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ishaangupta04"
 
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ishaangupta04"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ishaan.gupta@berkeley.edu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ishaan-gupta-cal/"
-
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ishaangupta04"
+      
 collections:
   projects:
     output: true
