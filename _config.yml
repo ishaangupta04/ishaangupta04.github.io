@@ -88,8 +88,8 @@ footer:
 
 collections:
   portfolio:
-  output: true
-  permaline: /:collection/:path/
+    output: true
+    permaline: /:collection/:path/
   
 defaults:
   # _portfolio
