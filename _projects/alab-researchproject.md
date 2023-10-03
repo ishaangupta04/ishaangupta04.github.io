@@ -27,6 +27,26 @@ feature_row2:
     excerpt: "Failure Mode 1 Solution"
   - image_path: /assets/images/A-Lab/failure-mode-2-sol-2.jpg
     excerpt: "Failure Mode 2 Solution"
+
+#Final Design
+feature_row3:
+  - image_path: /assets/images/A-Lab/figure1.png
+    title: "Figure 1"
+    excerpt: "Section View of First Stage, showing the transition between the Cap Magazine and the Main Cap Channel. Shows placement of beam break sensors (Black) and Linear Actuators."
+  - image_path: /assets/images/A-Lab/figure2.png
+    title: "Figure 2"
+    excerpt: "Zoomed in Assembly of the First Stage, showing the Pick Up Platform."
+feature_row4:
+  - image_path: /assets/images/A-Lab/figure3.png
+    title: "Figure 3"
+    excerpt: "Section View of First Stage, Showing the transition between the Main Cap Channel and the Dispensing Ramp. Shows the placement of beam break sensors (black)."
+  - image_path: /assets/images/A-Lab/figure4.png
+    title: "Figure 4"
+    excerpt: "Full Assembly"
+feature_row5:
+  - image_path: /assets/images/A-Lab/figure5.png
+    title: "Figure 5"
+    excerpt: "Shown above is the parametric design of the Pick Up Platform."
 ---
 
 ## Introduction
