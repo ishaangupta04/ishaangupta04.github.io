@@ -1,6 +1,6 @@
 ---
 title: "Axolotl Battle Bot"
-oder: 4
+oder: 3
 excerpt: "Competeted on Season 5 of the Discovery Channel Show BattleBots"
 header:
   image: /assets/images/glitch/glitch-teaser.JPG
