@@ -95,7 +95,7 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: single
+      layout: grid
       author_profile: true
       share: false
       related: false
