@@ -90,24 +90,15 @@ collections:
     permaline: /:collection/:path/
   
 defaults:
-  # _projects/research
+  # _projects
   - scope:
-      path: "_projects/research"
+      path: ""
       type: projects
     values:
       layout: grid
       author_profile: true
       share: false
       related: false
-  # _projects/team
-  - scope:
-    path: "_projects/team"
-    type: team
-  values:
-    layout: grid
-    author_profile: true
-    share: false
-    related: false
   # _pages
   - scope:
       path: "_pages"
