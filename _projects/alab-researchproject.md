@@ -36,14 +36,12 @@ feature_row3:
   - image_path: /assets/images/A-Lab/figure2.png
     title: "Figure 2"
     excerpt: "Zoomed in Assembly of the First Stage, showing the Pick Up Platform."
-feature_row4:
   - image_path: /assets/images/A-Lab/figure3.png
     title: "Figure 3"
     excerpt: "Section View of First Stage, Showing the transition between the Main Cap Channel and the Dispensing Ramp. Shows the placement of beam break sensors (black)."
   - image_path: /assets/images/A-Lab/figure4.png
     title: "Figure 4"
     excerpt: "Full Assembly"
-feature_row5:
   - image_path: /assets/images/A-Lab/figure5.png
     title: "Figure 5"
     excerpt: "Shown above is the parametric design of the Pick Up Platform."
@@ -85,8 +83,6 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
 
 ## Final Design
 {% include feature_row id= "feature_row3" type="center" %}
-{% include feature_row id= "feature_row4" type="center" %}
-{% include feature_row id= "feature_row5"  type="center" %}
   Pictured above is the finalized design of the cap dispenser. The flow of caps is as follows: The system will initially be completely full with caps. The system is designed to hold 70 caps, with 22 held in the magazine, and another 4 in the Main Cap Channel and the Dispensing Ramp.  As the robot takes a cap from the Pick Up Platform, the cap behind it will fall forward taking its place, and a cap will fall down from the magazine of the first stage. This will repeat until the first stage magazine is completely depleted. This status will be determined by the black beam break sensors, placed in the transition between the Main Cap Channel and the Dispensing Ramp. Then the linear actuator between the first and second stage will open, releasing the caps from the second stage into the Pick Up Platform. This process will continue until there are no more caps left in the system. The 2nd and 3rd Stages are identical to the first stage with the Dispensing Ramp removed, and are modular, allowing for more stages to be added or removed in the future. Large voids were placed in the structures to optimize 3-D printing speeds and material consumption. The system thus far has a 100% success rate in feeding the caps to the human hand with a sample size of 60 caps being fed through the system. To insure a repeatable pick up point for the robot arm, the Pick Up Platform has 2 angled walls that are designed to tangent to Cap Dispenser with a clearance of .01 inches. The cap behind the cap in Pick Up Platform applies a force on the first cap such that it is perfectly positioned.
 
 ## Project Delays
