@@ -3,8 +3,8 @@ title: "A-Lab Research Project"
 order: 1
 excerpt: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
 header:
-  image: /assets/images/glitch/glitch-teaser.JPG
-  teaser: assets/images/glitch/glitch-teaser.JPG
+  image: /assets/images/A-Lab/frontal.png
+  teaser: assets/images/A-lab/Cap_Dispenser_Main.jpg
 sidebar:
   - title: "Role"
     image: 
@@ -26,21 +26,38 @@ toc_sticky: true
 - Cap Alignment 
   - Allow for repeatable robot arm pick ups
 - Cap Detection
-  - Track Cap Capacity with beam break or infrared sensors
+  - Track cap caapacity with beam break or infrared sensors
 - Passive Cap Feeding
   - Reduces Failure Points
-  - Simplifies Programming Complexity at the cost of Mechanical Complexity
+  - Simplifies programming complexity at the cost of increased mechanical complexity
 - 3-D Printable Body
-  - Allows for rapid iteration of Designs
+  - Allows for rapid iteration
   - Reduces part count
-  - Reduces Assembly Time
+  - Reduces assembly time
 - Modular Design
-  - Reduces the size of parts to fit on 3-D Printer Build Plate
+  - Reduces the size of parts to fit on 3-D Printer build plate
   - Allows for faster repairs 
   - Allows for expansion of system to accommodate larger or smaller volumes
 
+## Inital Concepts
+![image-center](/assets/images/A-Lab/inital-concepts.jpg){: .align-center}
+![image-center](/assets/images/A-Lab/concept1.png){: .align-center}
+feature_row:
+  - image_path: /assets/images/A-Lab/inital-concepts.jpg
+    title: ""
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/A-Lab/concept1.png
+    title: ""
+    excerpt: "Proof of concept CAD for the cap magazine design and the use of linear actuators as gates"
+
 ## Prototype & Testing
+This is the CAD used to eliminate Failure Mode 2. The additional slot reduces friction on the leading edge of the cap, which is what makes the most contact with the ramp floor. If the 3-D printer was able to print finer layers, then this fix would be entirely unnecessary. However, testing showed that gaps within the layers of the printing process caused imperfections which would catch the front edge of the caps as they contact the ramp, causing them to be stuck in place as pictured in Failure Mode 2. 
+
+Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing the angle of the ramp, this allowed for the caps to gain more speed on their way down the ramp, eliminating this failure.
+
 
 ## Final Design
+  Pictured above is the finalized design of the cap dispenser. The flow of caps is as follows: The system will initially be completely full with caps. The system is designed to hold 70 caps, with 22 held in the magazine, and another 4 in the Main Cap Channel and the Dispensing Ramp.  As the robot takes a cap from the Pick Up Platform, the cap behind it will fall forward taking its place, and a cap will fall down from the magazine of the first stage. This will repeat until the first stage magazine is completely depleted. This status will be determined by the black beam break sensors, placed in the transition between the Main Cap Channel and the Dispensing Ramp. Then the linear actuator between the first and second stage will open, releasing the caps from the second stage into the Pick Up Platform. This process will continue until there are no more caps left in the system. The 2nd and 3rd Stages are identical to the first stage with the Dispensing Ramp removed, and are modular, allowing for more stages to be added or removed in the future. Large voids were placed in the structures to optimize 3-D printing speeds and material consumption. The system thus far has a 100% success rate in feeding the caps to the human hand with a sample size of 60 caps being fed through the system. To insure a repeatable pick up point for the robot arm, the Pick Up Platform has 2 angled walls that are designed to tangent to Cap Dispenser with a clearance of .01 inches. The cap behind the cap in Pick Up Platform applies a force on the first cap such that it is perfectly positioned.
 
 ## Remaining Steps
+While the mechanical design of the project has been finalized, the programming of the sensors and actuators, as well as completing the associated electrical systems is required. Once this is completed, a live test with the robot arm needs to be conducted to test if the new system is better than the previous one.
