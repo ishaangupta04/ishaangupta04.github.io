@@ -1,6 +1,6 @@
 ---
 title: "YC Startup Consultation Project"
-order: 2
+order: 1
 excerpt: "Consulted a YC22 Agritech Startup"
 header:
   image: /assets/images/glitch/glitch-teaser.JPG
