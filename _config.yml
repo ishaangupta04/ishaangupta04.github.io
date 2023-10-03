@@ -99,7 +99,6 @@ defaults:
       author_profile: true
       share: false
       related: false
-      sort_by: order
   # _pages
   - scope:
       path: "_pages"
