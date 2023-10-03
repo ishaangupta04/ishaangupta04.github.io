@@ -95,4 +95,5 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
   
 
 ## Remaining Steps
+{% include figure image_path="/assets/images/A-Lab/frontal.png" alt="" caption="Final Cad Model" %}
 While the mechanical design of the project has been finalized, the programming of the sensors and actuators, as well as completing the associated electrical systems is required. Once this is completed, a live test with the robot arm needs to be conducted to test if the new system is better than the previous one.
