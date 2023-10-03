@@ -1,27 +1,50 @@
 ---
-title: "YC Startup Consultation Project"
+title: "YC22 Startup Consultation"
 order: 2
-excerpt: "Consulted a YC22 Agritech Startup"
+excerpt: "Scaling down a smart oven for agri-tech applications"
 header:
-  image: /assets/images/A-Lab/frontal.pnh
-  teaser: assets/images/A-lab/Cap_Dispenser_Main.jpg
+  image: /assets/images/A-Lab/frontal.png
+  teaser: assets/images/A-Lab/Cap_Dispenser_Main_render.jpg
 sidebar:
   - title: "Role"
     image: 
     image_alt: 
-    text: "Project Manager & Senior Engineer"
+    text: "Project Manager and Engineering Lead"
   - title: "Responsibilities"
-    text: "Re-Design Armor Panels to enable configurations and shock reduction"
-gallery:
-  - url:
-    image_path: 
-    alt: "placeholder image 1"
-  - url: 
-    image_path: 
-    alt: "placeholder image 2"
-  - url: 
-    image_path: 
-    alt: "placeholder image 3"
+    text: "Project Mangement, BOM Mangement, Part Sourcing, CAD/CAM, PID Control"
+toc: true
+toc_label: "Table of Contents"
+toc_sticky: true
+    
+# Prototyping
+feature_row:
+  - image_path: /assets/images/A-Lab/failure-mode-1.jpg
+    excerpt: "Failure Mode 1"
+  - image_path: /assets/images/A-Lab/failure-mode-2.jpg
+    excerpt: "Failure Mode 2"
+feature_row2:
+  - image_path: /assets/images/A-Lab/failure-mode-1-sol-1.png
+    excerpt: "Failure Mode 1 Solution"
+  - image_path: /assets/images/A-Lab/failure-mode-1-sol-2.png
+    excerpt: "Failure Mode 2 Solution"
+
+#Final Design
+feature_row3:
+  - image_path: /assets/images/A-Lab/figure1.png
+    title: "Figure 1"
+    excerpt: "Section View of First Stage, showing the transition between the Cap Magazine and the Main Cap Channel. Shows placement of beam break sensors (Black) and Linear Actuators."
+  - image_path: /assets/images/A-Lab/figure2.png
+    title: "Figure 2"
+    excerpt: "Zoomed in Assembly of the First Stage, showing the Pick Up Platform."
+  - image_path: /assets/images/A-Lab/figure3.png
+    title: "Figure 3"
+    excerpt: "Section View of First Stage, Showing the transition between the Main Cap Channel and the Dispensing Ramp. Shows the placement of beam break sensors (black)."
+  - image_path: /assets/images/A-Lab/figure4.png
+    title: "Figure 4"
+    excerpt: "Full Assembly"
+  - image_path: /assets/images/A-Lab/figure5.png
+    title: "Figure 5"
+    excerpt: "Shown above is the parametric design of the Pick Up Platform."
 ---
 
 ## Introduction
@@ -33,27 +56,40 @@ gallery:
 - Cap Alignment 
   - Allow for repeatable robot arm pick ups
 - Cap Detection
-  - Track Cap Capacity with beam break or infrared sensors
+  - Track cap caapacity with beam break or infrared sensors
 - Passive Cap Feeding
   - Reduces Failure Points
-  - Simplifies Programming Complexity at the cost of Mechanical Complexity
+  - Simplifies programming complexity at the cost of increased mechanical complexity
 - 3-D Printable Body
-  - Allows for rapid iteration of Designs
+  - Allows for rapid iteration
   - Reduces part count
-  - Reduces Assembly Time
+  - Reduces assembly time
 - Modular Design
-  - Reduces the size of parts to fit on 3-D Printer Build Plate
+  - Reduces the size of parts to fit on 3-D Printer build plate
   - Allows for faster repairs 
   - Allows for expansion of system to accommodate larger or smaller volumes
 
+## Inital Concepts
+{% include figure image_path="/assets/images/A-Lab/inital-concepts.jpg" alt="" caption="" %}
+{% include figure image_path="/assets/images/A-Lab/concept1.png" alt="" caption="Proof of concept CAD for the cap magazine design and the use of linear actuators as gates" %}
+
 ## Prototype & Testing
+{% include feature_row %}
+{% include feature_row id= "feature_row2" %}
 This is the CAD used to eliminate Failure Mode 2. The additional slot reduces friction on the leading edge of the cap, which is what makes the most contact with the ramp floor. If the 3-D printer was able to print finer layers, then this fix would be entirely unnecessary. However, testing showed that gaps within the layers of the printing process caused imperfections which would catch the front edge of the caps as they contact the ramp, causing them to be stuck in place as pictured in Failure Mode 2. 
 
 Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing the angle of the ramp, this allowed for the caps to gain more speed on their way down the ramp, eliminating this failure.
 
 
 ## Final Design
+{% include feature_row id= "feature_row3" type="center" %}
   Pictured above is the finalized design of the cap dispenser. The flow of caps is as follows: The system will initially be completely full with caps. The system is designed to hold 70 caps, with 22 held in the magazine, and another 4 in the Main Cap Channel and the Dispensing Ramp.  As the robot takes a cap from the Pick Up Platform, the cap behind it will fall forward taking its place, and a cap will fall down from the magazine of the first stage. This will repeat until the first stage magazine is completely depleted. This status will be determined by the black beam break sensors, placed in the transition between the Main Cap Channel and the Dispensing Ramp. Then the linear actuator between the first and second stage will open, releasing the caps from the second stage into the Pick Up Platform. This process will continue until there are no more caps left in the system. The 2nd and 3rd Stages are identical to the first stage with the Dispensing Ramp removed, and are modular, allowing for more stages to be added or removed in the future. Large voids were placed in the structures to optimize 3-D printing speeds and material consumption. The system thus far has a 100% success rate in feeding the caps to the human hand with a sample size of 60 caps being fed through the system. To insure a repeatable pick up point for the robot arm, the Pick Up Platform has 2 angled walls that are designed to tangent to Cap Dispenser with a clearance of .01 inches. The cap behind the cap in Pick Up Platform applies a force on the first cap such that it is perfectly positioned.
 
+## Project Delays
+{% include figure image_path="/assets/images/A-Lab/figure6.jpg" alt="" caption="Ender 3-Pro printing a “Benchy”, a boat model commonly used to test the capabilities of 3-D printers." %}
+  The primary delay of the project was due to the need to set up and calibrate the 2 Ender - 3 Pro 3-D Printers, which were used to print the main body of the cap dispenser. The Ender 3 Pro printers need to have their beds leveled and z-height set out of the box, and this process ensures that the printers print a solid first layer. However, these printers also had a firmware that was out of date by 4 years, so the automatic pre-installed functions that normally perform bed leveling and z-height setting were lacking. Additionally, the printers lacked the upgrade that automatically performs these functions. As such, in addition to having to assemble and tune this printers which caused a week delay in the project start, another week was spent on researching methods to update the firmware of the printers, and ordering a CR-Touch, an upgrade that allows the print nozzle of the printer to set the z-height and also construct a height map of the bed. This height map allows the printer to compensate for irregularities in the bed, allowing it to print layers at the perfect distance from the build platform, improving the bed adhesion of the print as well as the consistency of the print layers.
+  
+
 ## Remaining Steps
+{% include figure image_path="/assets/images/A-Lab/frontal.png" alt="" caption="Final Cad Model" %}
 While the mechanical design of the project has been finalized, the programming of the sensors and actuators, as well as completing the associated electrical systems is required. Once this is completed, a live test with the robot arm needs to be conducted to test if the new system is better than the previous one.
