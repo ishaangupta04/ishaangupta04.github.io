@@ -25,7 +25,7 @@ feature_row:
 feature_row2:
   - image_path: /assets/images/A-Lab/failure-mode-1-sol-1.png
     excerpt: "Failure Mode 1 Solution"
-  - image_path: /assets/images/A-Lab/failure-mode-2-sol-2.jpg
+  - image_path: /assets/images/A-Lab/failure-mode-2-sol-2.png
     excerpt: "Failure Mode 2 Solution"
 
 #Final Design
