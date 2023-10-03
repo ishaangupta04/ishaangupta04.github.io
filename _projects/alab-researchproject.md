@@ -4,7 +4,7 @@ order: 1
 excerpt: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
 header:
   image: /assets/images/A-Lab/frontal.png
-  teaser: assets/images/A-lab/Cap_Dispenser_Main_render.jpg
+  teaser: /assets/images/A-lab/Cap_Dispenser_Main_render.jpg
 sidebar:
   - title: "Role"
     image: 
@@ -25,7 +25,7 @@ feature_row:
 feature_row2:
   - image_path: /assets/images/A-Lab/failure-mode-1-sol-1.png
     excerpt: "Failure Mode 1 Solution"
-  - image_path: /assets/images/A-Lab/failure-mode-2-sol-2.png
+  - image_path: /assets/images/A-Lab/failure-mode-1-sol-2.png
     excerpt: "Failure Mode 2 Solution"
 
 #Final Design
