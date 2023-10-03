@@ -19,13 +19,14 @@ toc_sticky: true
 # Prototyping
 feature_row:
   - image_path: /assets/images/A-Lab/failure-mode-1.jpg
-    title: "Failure Mode 1"
+    excerpt: "Failure Mode 1"
   - image_path: /assets/images/A-Lab/failure-mode-2.jpg
-    title: "Failure Mode 2"
+    excerpt: "Failure Mode 2"
+feature_row2:
   - image_path: /assets/images/A-Lab/failure-mode-1-sol-1.png
-    title: "Failure Mode 1 Solution"
-  - image_path: /assets/images/A-Lab/failure-mode-2-sol-2.png
-    title: "Failure Mode 2 Solution"
+    excerpt: "Failure Mode 1 Solution"
+  - image_path: /assets/images/A-Lab/failure-mode-2-sol-2.jpg
+    excerpt: "Failure Mode 2 Solution"
 ---
 
 ## Introduction
@@ -56,6 +57,7 @@ feature_row:
 
 ## Prototype & Testing
 {% include feature_row %}
+{% include feature_row2 %}
 This is the CAD used to eliminate Failure Mode 2. The additional slot reduces friction on the leading edge of the cap, which is what makes the most contact with the ramp floor. If the 3-D printer was able to print finer layers, then this fix would be entirely unnecessary. However, testing showed that gaps within the layers of the printing process caused imperfections which would catch the front edge of the caps as they contact the ramp, causing them to be stuck in place as pictured in Failure Mode 2. 
 
 Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing the angle of the ramp, this allowed for the caps to gain more speed on their way down the ramp, eliminating this failure.
