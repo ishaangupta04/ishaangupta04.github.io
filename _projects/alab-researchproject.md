@@ -49,7 +49,7 @@ feature_row:
   - Allows for expansion of system to accommodate larger or smaller volumes
 
 ## Inital Concepts
-{% include feature_row}
+{% include feature_row %}
 
 ## Prototype & Testing
 This is the CAD used to eliminate Failure Mode 2. The additional slot reduces friction on the leading edge of the cap, which is what makes the most contact with the ramp floor. If the 3-D printer was able to print finer layers, then this fix would be entirely unnecessary. However, testing showed that gaps within the layers of the printing process caused imperfections which would catch the front edge of the caps as they contact the ramp, causing them to be stuck in place as pictured in Failure Mode 2. 
