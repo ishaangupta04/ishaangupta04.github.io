@@ -40,8 +40,6 @@ toc_sticky: true
   - Allows for expansion of system to accommodate larger or smaller volumes
 
 ## Inital Concepts
-![image-center](/assets/images/A-Lab/inital-concepts.jpg){: .align-center}
-![image-center](/assets/images/A-Lab/concept1.png){: .align-center}
 feature_row:
   - image_path: /assets/images/A-Lab/inital-concepts.jpg
     title: ""
