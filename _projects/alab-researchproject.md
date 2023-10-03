@@ -40,6 +40,7 @@ toc_sticky: true
   - Allows for expansion of system to accommodate larger or smaller volumes
 
 ## Inital Concepts
+---
 feature_row:
   - image_path: /assets/images/A-Lab/inital-concepts.jpg
     title: ""
@@ -47,6 +48,7 @@ feature_row:
   - image_path: /assets/images/A-Lab/concept1.png
     title: ""
     excerpt: "Proof of concept CAD for the cap magazine design and the use of linear actuators as gates"
+---
 
 ## Prototype & Testing
 This is the CAD used to eliminate Failure Mode 2. The additional slot reduces friction on the leading edge of the cap, which is what makes the most contact with the ramp floor. If the 3-D printer was able to print finer layers, then this fix would be entirely unnecessary. However, testing showed that gaps within the layers of the printing process caused imperfections which would catch the front edge of the caps as they contact the ramp, causing them to be stuck in place as pictured in Failure Mode 2. 
