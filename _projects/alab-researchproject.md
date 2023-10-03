@@ -1,6 +1,6 @@
 ---
 title: "A-Lab Research Project"
-order: 0
+order: 1
 excerpt: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
 header:
   image: /assets/images/glitch/glitch-teaser.JPG
