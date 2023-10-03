@@ -1,6 +1,5 @@
 ---
 title: "A-Lab Research Project"
-order: 1
 excerpt: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
 header:
   image: /assets/images/A-Lab/frontal.png
