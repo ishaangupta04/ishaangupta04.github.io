@@ -2,7 +2,7 @@
 title: Projects
 layout: collection
 permalink: /projects/
-collection: team
+collection: projects
 entries_layout: grid
 classes: wide
 ---
