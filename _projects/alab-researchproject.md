@@ -14,6 +14,7 @@ sidebar:
     text: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
 toc: true
 toc_label: "Table of Contents"
+toc_sticky: true
 ---
 
 ## Introduction
