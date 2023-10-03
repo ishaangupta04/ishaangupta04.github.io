@@ -1,6 +1,5 @@
 ---
 title: "YC22 Startup Consultation"
-order: 2
 excerpt: "Scaling down a smart oven for agri-tech applications"
 header:
   image: /assets/images/A-Lab/frontal.png
