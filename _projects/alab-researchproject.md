@@ -4,7 +4,7 @@ order: 1
 excerpt: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
 header:
   image: /assets/images/A-Lab/frontal.png
-  teaser: /assets/images/A-lab/Cap_Dispenser_Main_render.jpg
+  teaser: assets/images/A-lab/Cap_Dispenser_Main_render.jpg
 sidebar:
   - title: "Role"
     image: 
