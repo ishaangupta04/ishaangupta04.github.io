@@ -12,16 +12,6 @@ sidebar:
     text: "Student Assistant"
   - title: "Responsibilities"
     text: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
-gallery:
-  - url:
-    image_path: 
-    alt: "placeholder image 1"
-  - url: 
-    image_path: 
-    alt: "placeholder image 2"
-  - url: 
-    image_path: 
-    alt: "placeholder image 3"
   toc: true
   toc_label: "Table of Contents"
 ---
