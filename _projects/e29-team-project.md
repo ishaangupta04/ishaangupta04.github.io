@@ -1,5 +1,6 @@
 ---
 title: "E29 Team Project"
+order: 5
 excerpt: ""
 header:
   image: /assets/images/glitch/glitch-teaser.JPG
