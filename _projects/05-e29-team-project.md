@@ -23,6 +23,8 @@ gallery:
     alt: "placeholder image 3"
 ---
 ## Engineering Drawings
-<embed src = "https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" type="application/pdf"/>
+<object data="https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" width="1000" height="1000" type='application/pdf/>
+
+<!-- <embed src = "https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" type="application/pdf"/> -->
 
 UNDER CONSTRUCTION
