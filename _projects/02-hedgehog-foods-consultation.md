@@ -3,7 +3,7 @@ title: "YC22 Startup Consultation"
 excerpt: "Scaling down a smart oven for agri-tech applications"
 header:
   image: 
-  teaser: assets/images/hedgehog/final.jpg
+  teaser: assets/images/hedgehog/final-electronics.jpg
 sidebar:
   - title: "Role"
     image: 
@@ -21,16 +21,15 @@ feature_row:
     excerpt: "Body Interior"
   - image_path: /assets/images/hedgehog/proto-body1.jpg
     excerpt: "Body Exterior"
-feature_row2:
   - image_path: /assets/images/hedgehog/proto-motor.jpg
     excerpt: "3-D Printed Motor Bracket"
 
 #Final Design
 feature_row3:
   - image_path: /assets/images/hedgehog/final-top.jpg
-    excerpt: "Final Projuct prepped and ready for the full test."
+    excerpt: "Final Product prepped and ready for the full test."
   - image_path: /assets/images/hedgehog/final.jpg
-    excerpt: "Side view showing the motor controllers, intake fan, and arduino"
+    excerpt: "Side view showing the motor controllers, intake fan, and microcontrollers"
 ---
 
 ## Introduction
@@ -62,7 +61,6 @@ feature_row3:
 
 ## Prototype & Testing
 {% include feature_row %}
-{% include feature_row id= "feature_row2" type = "center" %}
 
 
 
