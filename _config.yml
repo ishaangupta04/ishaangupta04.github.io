@@ -96,6 +96,7 @@ defaults:
       type: projects
     values:
       layout: single
+      classes: wide
       author_profile: true
       share: false
       related: false
