@@ -1,6 +1,6 @@
 ---
-title: "Axolotl Battle Bot"
-excerpt: "Competeted on Season 5 of the Discovery Channel Show BattleBots"
+title: "Axolotl BattleBot"
+excerpt: "Developed Season 5 BattleBots Contestant Axolotl"
 header:
   image: /assets/images/Axolotl/axo banner.png
   teaser: /assets/images/Axolotl/header.jpg

@@ -1,6 +1,6 @@
 ---
 title: "Glitch BattleBot Armor Panels"
-excerpt: "Designed Modular Armor system for the Battle Bot GLITCH"
+excerpt: "Designed a modular armor system for the BattleBot GLITCH"
 header:
   image: /assets/images/glitch/glitch-teaser.JPG
   teaser: assets/images/glitch/glitch-teaser.JPG
