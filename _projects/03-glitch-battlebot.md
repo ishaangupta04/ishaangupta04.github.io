@@ -34,7 +34,7 @@ sidebar:
 
 # Manufacturing
 feature_row:
-  - image_path: /assets/images/glitch/glitch-full-asm.jpg
+  - image_path: /assets/images/glitch/glitch-full-asm.JPG
     excerpt: "Post Welding"
 
 #Final Design
@@ -77,11 +77,11 @@ feature_row3:
 
 
 ## Final Design
-{% include feature_row id= "feature_row3" type="center" %}
+{% include figure image_path="/assets/images/glitch/glitch-teaser.JPG" alt="" caption="Final Design Fully Mounted" %}
 
 
 ## Reflection
 This project allowed me to apply some of the knowledge that I learned from building and designing Axolotl for Season 5 of Battle Bots, namely building a modular system that can be removed if damaged. One of the big failures with Axolotl was that if a section of the frame was totaled, the whole robot would need to get scrapped because **everything** was welded together. By making the front and side armor modular, it allowed for 2 major improvments: 
   1. The armor could be replaced, and as such 4 copies were made. 
   2. The armor could be isolated from the frame, allowing for it to not only deflect impacts but also *dispate* energy
-Overall I think this project was a success, and it went to be fielded in a number of robot fights.
+Overall I think this project was a success, and it went on to be fielded in a number of robot fights.
