@@ -2,7 +2,7 @@
 title: "Axolotl Battle Bot"
 excerpt: "Competeted on Season 5 of the Discovery Channel Show BattleBots"
 header:
-  image: /assets/images/Axolotl/axo banner.jpg
+  image: /assets/images/Axolotl/axo banner.png
   teaser: /assets/images/Axolotl/header.jpg
 sidebar:
   - title: "Role"
