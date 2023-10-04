@@ -23,9 +23,8 @@ gallery:
     alt: "placeholder image 3"
 ---
 ## Engineering Drawings
-
-<iframe src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" type="application/pdf">
-
+<iframe src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" type="application/pdf" width="500" height="500">
+</iframe>
 
 ## Reflection
 UNDER CONSTRUCTION
