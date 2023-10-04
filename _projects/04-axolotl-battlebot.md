@@ -2,15 +2,15 @@
 title: "Axolotl Battle Bot"
 excerpt: "Competeted on Season 5 of the Discovery Channel Show BattleBots"
 header:
-  image: /assets/images/glitch/glitch-teaser.JPG
-  teaser: assets/images/glitch/glitch-teaser.JPG
+  image: /assets/images/Axolotl/header.jpg
+  teaser: /assets/images/Axolotl/header.jpg
 sidebar:
   - title: "Role"
     image: 
     image_alt: 
-    text: "Design Lead"
-  - title: "Responsibilities"
-    text: "Numerous"
+    text: "Design Lead & Co-Founder"
+  - title: "Skills"
+    text: "CAD/CAM, Manufacuring, GD&T, FEA, Design"
 gallery:
   - url:
     image_path: 
@@ -23,4 +23,4 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-WHOA TEXT GOES HERE
+UNDER CONSTRUCTION

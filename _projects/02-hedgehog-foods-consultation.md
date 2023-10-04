@@ -11,10 +11,7 @@ sidebar:
     text: "Project Manager and Engineering Lead"
   - title: "Skills"
     text: "Project Mangement, BOM Mangement, Thermodynamics, CAD/CAM, PID Control, Manufacturing"
-toc: true
-toc_label: "Table of Contents"
-toc_sticky: true
-    
+
 # Prototyping
 feature_row:
   - image_path: /assets/images/hedgehog/proto-inside-body.jpg

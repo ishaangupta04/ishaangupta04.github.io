@@ -23,4 +23,4 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-WHOA TEXT GOES HERE
+UNDER CONSTRUCTION
