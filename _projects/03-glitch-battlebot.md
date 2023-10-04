@@ -12,25 +12,10 @@ sidebar:
   - title: "Responsibilities"
     text: "Re-Design Armor Panels to enable configurations and shock reduction"
 # CAD
-# gallery: 
-#   - url: /assets/images/glitch/og.jpg
-#     image_path: /assets/images/glitch/og.jpg
-#     title: ""
-#   - url:
-#     image_path:
-#     title: ""
-#   - url:
-#     image_path:
-#     title: ""
-#   - url:
-#     image_path:
-#     title: ""
-#   - url:
-#     image_path:
-#     title: ""
-#   - url:
-#     image_path:
-#     title: ""
+gallery: 
+  - url: 
+    image_path:
+    title: ""
 
 # Manufacturing
 feature_row:
@@ -64,7 +49,6 @@ feature_row3:
   - Easy to weld
   - Low cost of manufacuring
 
-
 ## CAD
 {% include figure image_path="/assets/images/glitch/og.jpg" alt="" caption= "Original Armor Design" %}
 {% include figure image_path="/assets/images/glitch/og-bolts.jpg" alt="" caption="The Original Armor was bolted directly to the frame, causing issues after fights were bolts would shear and be unremovable from the frame" %}
@@ -72,13 +56,10 @@ feature_row3:
 {% include figure image_path="/assets/images/glitch/Screenshot 2023-10-02 021936.jpg" alt="" caption="Armor Fully Mounted" %}
 
 ## Manufacturing
-{% include feature_row %}
-
-
+{% include figure image_path="/assets/images/glitch/glitch-full-asm.JPG" alt="" caption="Post Welding" %}
 
 ## Final Design
 {% include figure image_path="/assets/images/glitch/glitch-teaser.JPG" alt="" caption="Final Design Fully Mounted" %}
-
 
 ## Reflection
 This project allowed me to apply some of the knowledge that I learned from building and designing Axolotl for Season 5 of Battle Bots, namely building a modular system that can be removed if damaged. One of the big failures with Axolotl was that if a section of the frame was totaled, the whole robot would need to get scrapped because **everything** was welded together. By making the front and side armor modular, it allowed for 2 major improvments: 
