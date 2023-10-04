@@ -11,16 +11,77 @@ sidebar:
     text: "Mechanical Engineer"
   - title: "Responsibilities"
     text: "Re-Design Armor Panels to enable configurations and shock reduction"
-gallery:
-  - url:
-    image_path: 
-    alt: "placeholder image 1"
-  - url: 
-    image_path: 
-    alt: "placeholder image 2"
-  - url: 
-    image_path: 
-    alt: "placeholder image 3"
+# CAD
+# gallery: 
+#   - url: /assets/images/glitch/og.jpg
+#     image_path: /assets/images/glitch/og.jpg
+#     title: ""
+#   - url:
+#     image_path:
+#     title: ""
+#   - url:
+#     image_path:
+#     title: ""
+#   - url:
+#     image_path:
+#     title: ""
+#   - url:
+#     image_path:
+#     title: ""
+#   - url:
+#     image_path:
+#     title: ""
+
+# Manufacturing
+feature_row:
+  - image_path: /assets/images/glitch/glitch-full-asm.jpg
+    excerpt: "Post Welding"
+
+#Final Design
+feature_row3:
+  - image_path: /assets/images/glitch/glitch-teaser.JPG
+    excerpt: "Final Design Fully Mounted"
 ---
 
-WHOA TEXT GOES HERE
+## Introduction
+  This was a project for the armor subteam for Combat Robotics at Berkeley, a student organzation that competes on the T.V Show Battlebots. I was tasked with improving the side and front armor panels from the previous design. 
+
+## Design Considerations
+- Easily removable after combat
+  - Should only require 1 person and limited number of tools
+- Shock Isolated from the frame
+  - Reduces impact forces on the frame
+- Protects critical exposed frame sections
+  - Namely the weapon towers
+- Deflects weapon hits
+- < 1 inch ground clearance
+  - Lower ground clearance allows for the armor to act as a wedge
+- Modular
+  - Is swapable with the wedgelet configuration of the robot
+- Under 15 lbs
+- Material: AR 500 Tool Steel sheets
+- Tab Slot Construction
+  - Easy to weld
+  - Low cost of manufacuring
+
+
+## CAD
+{% include figure image_path="/assets/images/glitch/og.jpg" alt="" caption= "Original Armor Design" %}
+{% include figure image_path="/assets/images/glitch/og-bolts.jpg" alt="" caption="The Original Armor was bolted directly to the frame, causing issues after fights were bolts would shear and be unremovable from the frame" %}
+{% include figure image_path="/assets/images/glitch/Screenshot 2023-10-02 021402.png" alt="" caption="Full Assembly of the intial concept" %}
+{% include figure image_path="/assets/images/glitch/Screenshot 2023-10-02 021936.jpg" alt="" caption="Armor Fully Mounted" %}
+
+## Manufacturing
+{% include feature_row %}
+
+
+
+## Final Design
+{% include feature_row id= "feature_row3" type="center" %}
+
+
+## Reflection
+This project allowed me to apply some of the knowledge that I learned from building and designing Axolotl for Season 5 of Battle Bots, namely building a modular system that can be removed if damaged. One of the big failures with Axolotl was that if a section of the frame was totaled, the whole robot would need to get scrapped because **everything** was welded together. By making the front and side armor modular, it allowed for 2 major improvments: 
+  1. The armor could be replaced, and as such 4 copies were made. 
+  2. The armor could be isolated from the frame, allowing for it to not only deflect impacts but also *dispate* energy
+Overall I think this project was a success, and it went to be fielded in a number of robot fights.

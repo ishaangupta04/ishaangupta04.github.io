@@ -9,7 +9,7 @@ sidebar:
     image: 
     image_alt: 
     text: "Project Manager and Engineering Lead"
-  - title: "Responsibilities"
+  - title: "Skills"
     text: "Project Mangement, BOM Mangement, Thermodynamics, CAD/CAM, PID Control, Manufacturing"
 toc: true
 toc_label: "Table of Contents"
@@ -31,9 +31,10 @@ feature_row3:
   - image_path: /assets/images/hedgehog/final.jpg
     excerpt: "Side view showing the motor controllers, intake fan, and microcontrollers"
 ---
+{% include figure image_path="/assets/images/hedgehog/final.jpg" alt="" caption="" %}
 
 ## Introduction
-  This was a consultation project for a YC22 agri-tech startup through Berkeley Engineering Solutions, a mechanical engineering consulting organization I co-founded. The start-up is focused on automating mushroom farming, and the first step in this process is to pauestrize the mushroom feed to elminate all possible 
+  This was a consultation project for a YC22 agri-tech startup through Berkeley Engineering Solutions, a mechanical engineering consulting organization I co-founded. The start-up that my team and I worked with is focused on automating mushroom farming, and the first step in this process is to pauestrize the mushroom feed to elminate all possible 
 
 ## Design Considerations
 - Can load and operate with 25kg of substrate
@@ -69,5 +70,5 @@ feature_row3:
 
 
 ## Reflection
-Me and my team were able to run our oven to successfully pasteurize the composts in our first and only test with compost. However, due to an inability to properly tune the PID loops that ensured the oven successfully hit its temperature targets, the oven hit the first target temperature and held it for the duration of the test. Overall this was an immensely enjoyable project as it was the first project where I got the opportunity to apply my knowledge of thermodynamics and implement a PID controller in a more abstract application.
+Me and my team were able to run our oven to successfully pasteurize the composts in our first and only test with compost. However, due to an inability to properly tune the PID loops that ensured the oven successfully hit its temperature targets, the oven hit only the first target temperature and held it for the duration of the test instead of performing the multiple heating a cooling cycles it was meant to. Overall this was an immensely enjoyable project as it was the first project where I got the opportunity to apply my knowledge of thermodynamics and implement a PID controller in a more abstract application.
 
