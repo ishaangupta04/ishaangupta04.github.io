@@ -24,6 +24,6 @@ gallery:
 ---
 ## Engineering Drawings
 
-<embed src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" type="application/pdf"/>
+<iframe src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" type="application/pdf"/>
 
 UNDER CONSTRUCTION
