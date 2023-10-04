@@ -1,6 +1,6 @@
 ---
-title: "E29 Team Project"
-excerpt: ""
+title: "E29 Final Project"
+excerpt: "Manufacturing and Design Communication Final Project focused on learning and implementing proper GD&T"
 header:
   image: /assets/images/E29/20221208_115117.JPG
   teaser: assets/images/E29/20221208_115117.JPG
