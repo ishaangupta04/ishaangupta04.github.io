@@ -2,7 +2,7 @@
 title: "YC22 Startup Consultation"
 excerpt: "Scaling down a smart oven for agri-tech applications"
 header:
-  image: /assets/images/hedgehog/final.jpg
+  image: 
   teaser: assets/images/hedgehog/final.jpg
 sidebar:
   - title: "Role"
@@ -10,7 +10,7 @@ sidebar:
     image_alt: 
     text: "Project Manager and Engineering Lead"
   - title: "Responsibilities"
-    text: "Project Mangement, BOM Mangement, Part Sourcing, CAD/CAM, PID Control"
+    text: "Project Mangement, BOM Mangement, Thermodynamics, CAD/CAM, PID Control, Manufacturing"
 toc: true
 toc_label: "Table of Contents"
 toc_sticky: true
@@ -19,7 +19,7 @@ toc_sticky: true
 feature_row:
   - image_path: /assets/images/hedgehog/proto-inside-body.jpg
     excerpt: "Body Interior"
-  - image_path: /assets/images/hedgehog/proto-body.jpg
+  - image_path: /assets/images/hedgehog/proto-body1.jpg
     excerpt: "Body Exterior"
 feature_row2:
   - image_path: /assets/images/hedgehog/proto-motor.jpg
@@ -28,9 +28,9 @@ feature_row2:
 #Final Design
 feature_row3:
   - image_path: /assets/images/hedgehog/final-top.jpg
-    excerpt: "Section View of First Stage, showing the transition between the Cap Magazine and the Main Cap Channel. Shows placement of beam break sensors (Black) and Linear Actuators."
+    excerpt: "Final Projuct prepped and ready for the full test."
   - image_path: /assets/images/hedgehog/final.jpg
-    excerpt: "Zoomed in Assembly of the First Stage, showing the Pick Up Platform."
+    excerpt: "Side view showing the motor controllers, intake fan, and arduino"
 ---
 
 ## Introduction
@@ -57,12 +57,12 @@ feature_row3:
 ## Inital Concepts
 {% include figure image_path="/assets/images/hedgehog/concepts1.png" alt="" caption="" %}
 {% include figure image_path="/assets/images/hedgehog/concepts3.png" alt="" caption="" %}
-{% include figure image_path="/assets/images/hedgehog/cad-iso.png" alt="" caption="" %}
-{% include figure image_path="/assets/images/hedgehog/cad-section.png" alt="" caption="" %}
+{% include figure image_path="/assets/images/hedgehog/cad-iso.png" alt="" caption="Full Assembly of the intial concept" %}
+{% include figure image_path="/assets/images/hedgehog/cad-section.png" alt="" caption="Section View showing the interior. The feed is raised such that we can place a heating element bellow. Air will be intaked from the right, and will then be heated up within the box. It wil then rise through the box, heating up the compost in the process." %}
 
 ## Prototype & Testing
 {% include feature_row %}
-{% include feature_row id= "feature_row2" %}
+{% include feature_row id= "feature_row2" type = "center" %}
 
 
 
@@ -70,5 +70,6 @@ feature_row3:
 {% include feature_row id= "feature_row3" type="center" %}
 
 
-## Successes and Failures
-Me and my team were able to run our oven to successfully pausterize the composts in our first and only test with compost. However, due to an inabilty to properly tune the PID loops that ensured the oven successfully hit its temperature targets, the oven hit the first target temperature and held it for duration of the test.
+## Reflection
+Me and my team were able to run our oven to successfully pasteurize the composts in our first and only test with compost. However, due to an inability to properly tune the PID loops that ensured the oven successfully hit its temperature targets, the oven hit the first target temperature and held it for the duration of the test. Overall this was an immensely enjoyable project as it was the first project where I got the opportunity to apply my knowledge of thermodynamics and implement a PID controller in a more abstract application.
+
