@@ -86,6 +86,9 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
   The primary delay of the project was due to the need to set up and calibrate the 2 Ender - 3 Pro 3-D Printers, which were used to print the main body of the cap dispenser. The Ender 3 Pro printers need to have their beds leveled and z-height set out of the box, and this process ensures that the printers print a solid first layer. However, these printers also had a firmware that was out of date by 4 years, so the automatic pre-installed functions that normally perform bed leveling and z-height setting were lacking. Additionally, the printers lacked the upgrade that automatically performs these functions. As such, in addition to having to assemble and tune this printers which caused a week delay in the project start, another week was spent on researching methods to update the firmware of the printers, and ordering a CR-Touch, an upgrade that allows the print nozzle of the printer to set the z-height and also construct a height map of the bed. This height map allows the printer to compensate for irregularities in the bed, allowing it to print layers at the perfect distance from the build platform, improving the bed adhesion of the print as well as the consistency of the print layers.
   
 
-## Remaining Steps
+## Final CAD
 {% include figure image_path="/assets/images/A-Lab/frontal.png" alt="" caption="Final Cad Model" %}
-While the mechanical design of the project has been finalized, the programming of the sensors and actuators, as well as completing the associated electrical systems is required. Once this is completed, a live test with the robot arm needs to be conducted to test if the new system is better than the previous one.
+
+
+## Test Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bKwamMvG1CQ/0.jpg)](https://www.youtube.com/watch?v=bKwamMvG1CQ)
