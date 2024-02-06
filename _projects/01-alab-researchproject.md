@@ -90,9 +90,9 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
 {% include figure image_path="/assets/images/A-Lab/frontal.png" alt="" caption="Final Cad Model" %}
 
 
-## Eltronics 
+## Electronics 
+{% include figure image_path="assets\images\A-Lab\elecBox.heic" alt="" caption="Cap Dispenser Electrical Box." %}
+  Pictured above is the electrical box that controls the cap dispenser system. The microcontroller in use is an Arduino Uno, which takes 9 volts at its input. The power supply in use provides 12 volts, so a variable voltage regulator is used to downstep the 12 volts to 9 volts. The system makes use of 4 linear actuators, which all require 6 volts at their input. As such, a second voltage regulator is used to downstep the 12 volts of the power supply down to 6 volts. The final electrical component of the cap dispenser is the Ada Fruit Beam Break Sensor, which requires 5 volts of input voltage. This is received directly from the Arduino itself, which has a 5-volt output. 
 
 ## Eletrical Test Video
-[![alt="Eletronics and Arduino Script Test"](https://img.youtube.com/vi/bKwamMvG1CQ/0.jpg)](https://www.youtube.com/watch?v=bKwamMvG1CQ)
-
 <iframe src="https://drive.google.com/file/d/1H2C1Yx8WkfWjeXX8235diMmnt12v3YQ-/preview" width="640" height="480" allow="autoplay"></iframe>
