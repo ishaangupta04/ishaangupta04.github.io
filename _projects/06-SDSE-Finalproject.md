@@ -2,15 +2,15 @@
 title: "SDSE Final Project"
 excerpt: "Salary Analysis and Prediction of ACME Corporation"
 header:
-  image: /assets/images/E29/20221208_115117.JPG
-  teaser: assets/images/E29/20221208_115117.JPG
+  image: /assets/images/SDSE/RF_Corr.png
+  teaser: assets/images/SDSE/RF_Corr.png
 sidebar:
-  - title: "Role"
+  - title:
     image: 
     image_alt: 
-    text: "Manufacuring Lead"
+    text: 
   - title: "Skills"
-    text: "3-D Printing, DFM, CAD/CAM, GD&T"
+    text: "Python, Machine Learning, Data Analysis"
 gallery:
   - url:
     image_path: 
@@ -22,9 +22,6 @@ gallery:
     image_path: 
     alt: "placeholder image 3"
 ---
-## Engineering Drawings
-<iframe src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets/documents/E29 Working Drawings Draft.pdf" type="application/pdf" width="500" height="500">
+## Report
+<iframe src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets/documents/E178 Final Report [Group 11].pdf" type="application/pdf" width="500" height="500">
 </iframe>
-
-## Reflection
-UNDER CONSTRUCTION
