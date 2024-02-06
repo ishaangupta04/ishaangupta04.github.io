@@ -1,6 +1,6 @@
 ---
 title: "SDSE Final Project"
-excerpt: "Salary Analysis and Prediction of ACME Corporation"
+excerpt: "Salary Analysis and Prediction of ACME Corporation using Random Forest and Linear Regression"
 header:
   image:
   teaser: assets/images/SDSE/HeatMap.png
