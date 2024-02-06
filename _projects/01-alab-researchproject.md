@@ -94,5 +94,117 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
 {% include figure image_path="assets\images\A-Lab\elecBox.jpg" alt="" caption="Cap Dispenser Electrical Box." %}
   Pictured above is the electrical box that controls the cap dispenser system. The microcontroller in use is an Arduino Uno, which takes 9 volts at its input. The power supply in use provides 12 volts, so a variable voltage regulator is used to downstep the 12 volts to 9 volts. The system makes use of 4 linear actuators, which all require 6 volts at their input. As such, a second voltage regulator is used to downstep the 12 volts of the power supply down to 6 volts. The final electrical component of the cap dispenser is the Ada Fruit Beam Break Sensor, which requires 5 volts of input voltage. This is received directly from the Arduino itself, which has a 5-volt output. 
 
+## Code
+  Below is the Arduino Code that runs the Cap Dispenser.  The cap dispenser operates passively, using gravity to push caps to the dispensing zone. However, when the first magazine of caps is empty, the beam break sensor at the mouth of the dispenser detects that there is no cap, and opens the next magazine in the system. The system relies on the beam break sensor outputs, which is binary HIGH or LOW value to determine where the cap dispenser need to open. The beam break will output HIGH if the beam is uninterrupted, and will output LOW if the beam is broken, which would be the case if the dispenser is not empty. If the beam is unbroken for 5 seconds, the system will register the dispenser as empty and will open the next magazine of caps. If there is no next magazine of the caps, the system will set the state of the cap dispenser as STOPPED. 
+
+  '''cpp
+  #include <Arduino.h>
+  #include <EtherCard.h>
+  #include<ArduinoJson.h>
+  #include <AceRoutine.h>
+  #include <Servo.h>
+
+  using namespace ace_routine;
+
+  // Pin configuration
+  const int beamBreakPin = 4;  // Pin for the beam break sensor
+  const int actuatorPins[] = {5, 3, 6};  // Pins for the linear actuators
+
+  // Servo objects for controlling the linear actuators
+  Servo actuators[3];
+
+  // Variables to track the state of each actuator
+  int actuatorStates[] = {0, 0, 0};  // 0: Closed, 1: Open
+  int nextOpenActuator = 0;
+
+  // linear actutator open and close value constants
+  const int acuClose=1600, acuOpen=1050;
+
+  // Variable to track the start time when the beam is broken
+  unsigned long beamBreakStartTime = 0;
+
+  // Duration for which the beam must be continuously broken (in milliseconds)
+  const unsigned long beamBreakDuration = 5000;
+
+  //State of Cap Dispenser
+  enum State {
+    RUNNING,
+    STOP
+  };
+
+  State state = RUNNING;
+
+  void setup() {
+    Serial.begin(9600);
+    
+    // Initialize the linear actuators
+    for (int i = 0; i < 3; i++) {
+      actuators[i].attach(actuatorPins[i]);
+      Serial.print("Actuator ");
+      Serial.print(i + 1);
+      Serial.println(" setup.");
+      actuators[i].writeMicroseconds(acuClose);  // Close the actuators initially
+    }
+
+    // Initialize the beam break sensor
+    pinMode(beamBreakPin, INPUT);
+  }
+
+  void loop() {
+    if (state == RUNNING) {
+      runDispenser();
+    }
+  }
+
+  void runDispenser() {
+    // Check if the beam is connected
+    if (digitalRead(beamBreakPin) == HIGH) {
+      // Serial.println("HIGH");
+      // Beam is connected
+      if (beamBreakStartTime == 0) {
+        // If this is the first time beam is connected, record the start time
+        beamBreakStartTime = millis();
+      } else {
+        // Check if the beam has been continuously connected for the specified duration
+        if (millis() - beamBreakStartTime >= beamBreakDuration) {
+          // Beam has been continuously broken for the specified duration
+          activateNextActuator();
+          // Reset the beam break start time
+          beamBreakStartTime = 0;
+          delay(2000);
+        }
+      }
+    } else {
+      // Beam is broken, reset the start time
+      // Serial.println("LOW");
+      beamBreakStartTime = 0;
+    }
+  }
+
+  // Function to activate the next available actuator
+  void activateNextActuator() {
+    //If last gate is still closed;
+    if (nextOpenActuator < 3) {
+      if (actuatorStates[nextOpenActuator] == 0) {
+        // Actuator is closed, open it
+        actuators[nextOpenActuator].writeMicroseconds(acuOpen);
+        actuatorStates[nextOpenActuator] = 1;  // Set the state to open
+
+        Serial.print("Actuator ");
+        Serial.print(nextOpenActuator + 1);
+        Serial.println(" opened.");
+
+        nextOpenActuator++; //Move to next acutator;
+
+        delay(2000); //Wait for actuator to open
+      }
+    } else {
+      // All actuators are open and activateNextActuator is called
+      Serial.println("Cap Dispenser is empty");
+      state = STOP;
+    }
+  }
+  '''
+
 ## Electrical Test Video
 <iframe src="https://drive.google.com/file/d/1H2C1Yx8WkfWjeXX8235diMmnt12v3YQ-/preview" width="640" height="480" allow="autoplay"></iframe>
