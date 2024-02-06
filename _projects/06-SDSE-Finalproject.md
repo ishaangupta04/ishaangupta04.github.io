@@ -2,7 +2,7 @@
 title: "SDSE Final Project"
 excerpt: "Salary Analysis and Prediction of ACME Corporation"
 header:
-  image: /assets/images/SDSE/RF_Corr.png
+  image: /assets/images/SDSE/HeatMap.png
   teaser: assets/images/SDSE/RF_Corr.png
 sidebar:
   - title:
