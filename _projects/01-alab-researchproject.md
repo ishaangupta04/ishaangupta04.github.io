@@ -206,7 +206,7 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
   }
   ```
 
-  Below is code from the Adafruit website which was used to validate the outputs of the beam break sensor. Source: https://learn.adafruit.com/ir-breakbeam-sensors/arduino
+  Below is code from the Adafruit website which was used to validate the outputs of the beam break sensor. [Source](https://learn.adafruit.com/ir-breakbeam-sensors/arduino)
 
   ```cpp
     /* 
