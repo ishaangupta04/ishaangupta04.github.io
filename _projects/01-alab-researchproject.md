@@ -90,5 +90,10 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
 {% include figure image_path="/assets/images/A-Lab/frontal.png" alt="" caption="Final Cad Model" %}
 
 
-## Test Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bKwamMvG1CQ/0.jpg)](https://www.youtube.com/watch?v=bKwamMvG1CQ)
+## Eltronics 
+
+## Eletrical Test Video
+[![alt="Eletronics and Arduino Script Test"](https://img.youtube.com/vi/bKwamMvG1CQ/0.jpg)](https://www.youtube.com/watch?v=bKwamMvG1CQ)
+
+<iframe src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets\images\A-Lab\elecTest.MOV" type="application/pdf" width="800" height="500">
+</iframe>
