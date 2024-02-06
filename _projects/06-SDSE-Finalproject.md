@@ -5,10 +5,10 @@ header:
   image:
   teaser: assets/images/SDSE/HeatMap.png
 sidebar:
-  - title:
+  - title: Libraries
     image: 
     image_alt: 
-    text: 
+    text: Pandas, Scikitlearn, pickle 
   - title: "Skills"
     text: "Python, Machine Learning, Data Analysis"
 gallery:
