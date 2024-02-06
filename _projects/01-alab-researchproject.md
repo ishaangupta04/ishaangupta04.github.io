@@ -97,7 +97,7 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
 ## Code
   Below is the Arduino Code that runs the Cap Dispenser.  The cap dispenser operates passively, using gravity to push caps to the dispensing zone. However, when the first magazine of caps is empty, the beam break sensor at the mouth of the dispenser detects that there is no cap, and opens the next magazine in the system. The system relies on the beam break sensor outputs, which is binary HIGH or LOW value to determine where the cap dispenser need to open. The beam break will output HIGH if the beam is uninterrupted, and will output LOW if the beam is broken, which would be the case if the dispenser is not empty. If the beam is unbroken for 5 seconds, the system will register the dispenser as empty and will open the next magazine of caps. If there is no next magazine of the caps, the system will set the state of the cap dispenser as STOPPED. 
 
-  '''cpp
+  ```cpp
   #include <Arduino.h>
   #include <EtherCard.h>
   #include<ArduinoJson.h>
@@ -204,7 +204,62 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
       state = STOP;
     }
   }
-  '''
+  ```
+
+  Below is code from the Adafruit website which was used to validate the outputs of the beam break sensor. Source: https://learn.adafruit.com/ir-breakbeam-sensors/arduino
+
+  ```cpp
+    /* 
+    IR Breakbeam sensor demo!
+  */
+
+  #define LEDPIN 13
+    // Pin 13: Arduino has an LED connected on pin 13
+    // Pin 11: Teensy 2.0 has the LED on pin 11
+    // Pin  6: Teensy++ 2.0 has the LED on pin 6
+    // Pin 13: Teensy 3.0 has the LED on pin 13
+
+  #define SENSORPIN 4
+
+  // variables will change:
+  int sensorState = 0, lastState=0;         // variable for reading the pushbutton status
+
+  void setup() {
+    // initialize the LED pin as an output:
+    pinMode(LEDPIN, OUTPUT);      
+    // initialize the sensor pin as an input:
+    pinMode(SENSORPIN, INPUT);     
+    digitalWrite(SENSORPIN, HIGH); // turn on the pullup
+    
+    Serial.begin(9600);
+  }
+
+  void loop(){
+    // read the state of the pushbutton value:
+    sensorState = digitalRead(SENSORPIN);
+
+    // check if the sensor beam is broken
+    // if it is, the sensorState is LOW:
+    if (sensorState == LOW) {     
+      // turn LED on:
+      digitalWrite(LEDPIN, HIGH);  
+    } 
+    else {
+      // turn LED off:
+      digitalWrite(LEDPIN, LOW); 
+    }
+    
+    if (sensorState && !lastState) {
+      Serial.println("Unbroken");
+    } 
+    if (!sensorState && lastState) {
+      Serial.println("Broken");
+    }
+    
+    lastState = sensorState;
+  }
+  ```
+
 
 ## Electrical Test Video
 <iframe src="https://drive.google.com/file/d/1H2C1Yx8WkfWjeXX8235diMmnt12v3YQ-/preview" width="640" height="480" allow="autoplay"></iframe>
