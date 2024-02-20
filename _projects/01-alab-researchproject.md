@@ -52,7 +52,7 @@ feature_row3:
 - Cap Alignment 
   - Allow for repeatable robot arm pick ups
 - Cap Detection
-  - Track cap caapacity with beam break or infrared sensors
+  - Track cap capacity with beam break or infrared sensors
 - Passive Cap Feeding
   - Reduces Failure Points
   - Simplifies programming complexity at the cost of increased mechanical complexity
