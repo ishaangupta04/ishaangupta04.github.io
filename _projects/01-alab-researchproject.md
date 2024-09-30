@@ -261,5 +261,5 @@ Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing
   ```
 
 
-## Electrical Test Video
+## Test Video
 <iframe src="https://drive.google.com/file/d/1H2C1Yx8WkfWjeXX8235diMmnt12v3YQ-/preview" width="640" height="480" allow="autoplay"></iframe>
