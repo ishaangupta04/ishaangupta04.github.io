@@ -1,6 +1,7 @@
 ---
 title: "A-Lab Research Project"
-excerpt: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
+excerpt: "Automatic Sample Lid Dispenser"
+order: 6
 header:
   image: /assets/images/A-Lab/frontal.png
   teaser: assets/images/A-Lab/Cap_Dispenser_Main_render.jpg

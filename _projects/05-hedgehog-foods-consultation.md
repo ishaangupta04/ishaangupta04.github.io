@@ -1,6 +1,7 @@
 ---
 title: "YC22 Startup Consultation"
-excerpt: "Scaling down a smart oven for agri-tech applications"
+excerpt: "Scaled-down agri-tech smart oven"
+order: 5
 header:
   image: 
   teaser: assets/images/hedgehog/concepts2.png

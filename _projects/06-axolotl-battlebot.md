@@ -1,6 +1,7 @@
 ---
 title: "Axolotl BattleBot"
 excerpt: "Developed Season 5 BattleBots Contestant Axolotl"
+order: 1
 header:
   image: /assets/images/Axolotl/axo banner.png
   teaser: /assets/images/Axolotl/header.jpg
