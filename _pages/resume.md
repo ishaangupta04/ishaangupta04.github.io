@@ -3,5 +3,6 @@ title: Resume
 permalink: /resume/
 classes: wide
 ---
-<iframe src = "https://drive.google.com/viewerng/viewer?embedded=true&url=https://ishaangupta04.github.io/assets/documents/resume.pdf" type="application/pdf" width="800" height="500">
-</iframe>
+<img src="/assets/documents/resume.png" style= "width: 100%">
+
+<a href="/assets/documents/resume.pdf" download="resume.pdf">Download PDF</a>
