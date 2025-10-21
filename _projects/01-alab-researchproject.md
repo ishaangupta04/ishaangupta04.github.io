@@ -1,5 +1,5 @@
 ---
-title: "A-Lab Research Project"
+title: "Automatic Cap Dispenser"
 excerpt: "Automatic Sample Lid Dispenser"
 order: 6
 header:

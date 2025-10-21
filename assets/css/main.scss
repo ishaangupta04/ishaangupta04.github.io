@@ -28,3 +28,46 @@ html {
       font-size: 18px; // change to whatever
     }
   }
+
+// Make project grid titles white
+.archive__item-title {
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: #cccccc;
+      text-decoration: none;
+    }
+  }
+}
+
+// Remove underline from navigation links on hover
+.masthead {
+  .greedy-nav {
+    .visible-links {
+      li {
+        a {
+          text-decoration: none !important;
+          
+          &:hover,
+          &:focus,
+          &:visited {
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Additional override for any navigation links
+nav a,
+.nav__items a {
+  text-decoration: none !important;
+  
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration: none !important;
+  }
+}

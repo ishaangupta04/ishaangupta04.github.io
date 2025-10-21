@@ -87,7 +87,7 @@ footer:
 collections:
   projects:
     output: true
-    permaline: /:collection/:path/
+    permalink: /:collection/:path/
   
 defaults:
   # _projects

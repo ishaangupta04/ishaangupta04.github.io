@@ -1,5 +1,5 @@
 ---
-title: "YC22 Startup Consultation"
+title: "Smart Oven"
 excerpt: "Scaled-down agri-tech smart oven"
 order: 5
 header:
