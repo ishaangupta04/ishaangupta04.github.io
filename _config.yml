@@ -74,20 +74,13 @@ author:
 
 footer:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ishaan.gupta@berkeley.edu"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/ishaan-gupta-cal/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ishaangupta04"
-      
+
 collections:
   projects:
     output: true
     permalink: /:collection/:path/
+    sort_by: order
+    sort_order: reverse
   
 defaults:
   # _projects

@@ -9,6 +9,57 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// Project grid layout customization
+.layout--collection {
+    .grid__item {
+        @include breakpoint($small) {
+            width: calc(100% - 2em);
+        }
+
+        @include breakpoint($medium) {
+            width: calc(50% - 2em);
+        }
+
+        @include breakpoint($large) {
+            width: calc(50% - 2em);
+        }
+
+        .archive__item {
+            position: relative;
+            
+            .archive__item-teaser {
+                position: relative !important;
+                overflow: hidden !important;
+                padding-top: 75% !important; // This creates 4:3 ratio (75% = 3/4)
+                
+                img {
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                }
+            }
+        }
+    }
+}
+
+// Override minimal mistakes default image constraints
+.page__content {
+    .archive__item-teaser {
+        height: 450px !important;
+        max-height: none !important;
+        
+        img {
+            max-height: none !important;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
+    }
+}
+
 html {
     font-size: 12px; // change to whatever
   
@@ -29,6 +80,27 @@ html {
     }
   }
 
+// Final overrides for teaser images
+.archive__item-teaser,
+.grid__item .archive__item-teaser,
+.feature__item .archive__item-teaser,
+.page__content .archive__item-teaser {
+    position: relative !important;
+    overflow: hidden !important;
+    padding-top: 75% !important; // 4:3 aspect ratio
+    max-height: none !important;
+    height: 0 !important; // Required for padding-based ratio
+    
+    img {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
+
 // Make project grid titles white
 .archive__item-title {
   a {
@@ -38,36 +110,5 @@ html {
       color: #cccccc;
       text-decoration: none;
     }
-  }
-}
-
-// Remove underline from navigation links on hover
-.masthead {
-  .greedy-nav {
-    .visible-links {
-      li {
-        a {
-          text-decoration: none !important;
-          
-          &:hover,
-          &:focus,
-          &:visited {
-            text-decoration: none !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Additional override for any navigation links
-nav a,
-.nav__items a {
-  text-decoration: none !important;
-  
-  &:hover,
-  &:focus,
-  &:visited {
-    text-decoration: none !important;
   }
 }

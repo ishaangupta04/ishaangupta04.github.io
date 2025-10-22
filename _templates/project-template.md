@@ -13,7 +13,7 @@ sidebar:
   - title: "Role"
     text: "Your role"
   - title: "Skills"
-    text: "Skills Used"
+    text: "Short list of skills used"
 
 # Optional feature rows (used by the theme include `feature_row`)
 feature_row:
