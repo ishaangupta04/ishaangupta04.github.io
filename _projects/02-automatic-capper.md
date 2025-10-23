@@ -3,17 +3,13 @@ title: "Automatic Capper"
 excerpt: "An automated system for capping and decapping vials in laboratory environments"
 order: 5
 header:
-  image: /assets/images/Capper/system-overview.png
+  image: /assets/images/Capper/teaser_org.png
   teaser: /assets/images/Capper/teaser.png
-prev_url: /projects/hedgehog-foods
-next_url: /projects/echo-pen-plotter
 sidebar:
   - title: "Role"
     text: "Lead Designer & Engineer"
   - title: "Skills"
     text: "Mechanical Design, Electrical Systems, Safety Compliance, Programming, PLC"
-pagination:
-  enabled: true
 ---
 
 ## Introduction

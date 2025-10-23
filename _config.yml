@@ -19,7 +19,7 @@ email: ishaan.gupta@berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
 github_username: ishaangupta04
 minimal_mistakes_skin: dark
-search: true
+search: false
 atom_feed:
   hide: true
 

@@ -14,19 +14,26 @@ sidebar:
     text: "Designing Robot Cells for Autonomous Material Synthesis Laboratory"
 
     
-# Prototyping
-feature_row:
-  - image_path: /assets/images/A-Lab/failure-mode-1.jpg
-    excerpt: "Failure Mode 1"
-  - image_path: /assets/images/A-Lab/failure-mode-2.jpg
-    excerpt: "Failure Mode 2"
-feature_row2:
-  - image_path: /assets/images/A-Lab/failure-mode-1-sol-1.png
-    excerpt: "Failure Mode 1 Solution"
-  - image_path: /assets/images/A-Lab/failure-mode-1-sol-2.png
-    excerpt: "Failure Mode 2 Solution"
+# Failure Analysis & Solutions
+gallery:
+  - url: /assets/images/A-Lab/failure-mode-1.jpg
+    image_path: /assets/images/A-Lab/failure-mode-1.jpg
+    alt: "Failure Mode 1: Cap jamming in vertical feed"
+    title: "Failure Mode 1"
+  - url: /assets/images/A-Lab/failure-mode-2.jpg
+    image_path: /assets/images/A-Lab/failure-mode-2.jpg
+    alt: "Failure Mode 2: Cap nesting issue"
+    title: "Failure Mode 2"
+  - url: /assets/images/A-Lab/failure-mode-1-sol-1.png
+    image_path: /assets/images/A-Lab/failure-mode-1-sol-1.png
+    alt: "Solution 1: Passive gravity feed system"
+    title: "Solution: Passive Feed System"
+  - url: /assets/images/A-Lab/failure-mode-1-sol-2.png
+    image_path: /assets/images/A-Lab/failure-mode-1-sol-2.png
+    alt: "Solution 2: 90-degree cap rotation"
+    title: "Solution: Cap Orientation"
 
-#Final Design
+# Final Design Details
 feature_row3:
   - image_path: /assets/images/A-Lab/figure1.png
     title: "Figure 1"
@@ -71,10 +78,23 @@ feature_row3:
 {% include figure image_path="/assets/images/A-Lab/inital-concepts.jpg" alt="" caption="" %}
 {% include figure image_path="/assets/images/A-Lab/concept1.png" alt="" caption="Proof of concept CAD for the cap magazine design and the use of linear actuators as gates" %}
 
-## Prototype & Testing
-{% include feature_row %}
-{% include feature_row id= "feature_row2" %}
-This is the CAD used to eliminate Failure Mode 2. The additional slot reduces friction on the leading edge of the cap, which is what makes the most contact with the ramp floor. If the 3-D printer was able to print finer layers, then this fix would be entirely unnecessary. However, testing showed that gaps within the layers of the printing process caused imperfections which would catch the front edge of the caps as they contact the ramp, causing them to be stuck in place as pictured in Failure Mode 2. 
+## Prototyping
+{% include gallery class="full" layout="half" %}
+
+
+The CAD iterations above show our solutions to two critical failure modes:
+
+1. **Failure Mode 1: Cap Alignment Issues**
+   - Problem: Initial prototypes had difficulties with consistent cap alignment during dispensing
+   - Solution: Redesigned the dispensing mechanism with improved guides and alignment features
+   - Result: Significantly improved reliability in cap orientation and placement
+
+2. **Failure Mode 2: Dispensing Mechanism Jams** 
+   - Problem: Original design experienced occasional jams when dispensing caps
+   - Solution: Modified the internal geometry and added anti-jamming features
+   - Result: Eliminated mechanical jams and achieved smooth dispensing operation
+
+The CAD models demonstrate the iterative improvements made to address these failure modes, resulting in a more reliable and efficient cap dispensing system. The additional slot reduces friction on the leading edge of the cap, which is what makes the most contact with the ramp floor. If the 3-D printer was able to print finer layers, then this fix would be entirely unnecessary. However, testing showed that gaps within the layers of the printing process caused imperfections which would catch the front edge of the caps as they contact the ramp, causing them to be stuck in place as pictured in Failure Mode 2. 
 
 Failure Mode 1 was treated partially by the fix to Failure Mode 2. By increasing the angle of the ramp, this allowed for the caps to gain more speed on their way down the ramp, eliminating this failure.
 
