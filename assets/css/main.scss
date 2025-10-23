@@ -11,7 +11,15 @@ search: false
 
 // Project grid layout customization
 .layout--collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: -1em;
+    margin-left: -1em;
+    
     .grid__item {
+        margin: 1em;
+        
         @include breakpoint($small) {
             width: calc(100% - 2em);
         }
