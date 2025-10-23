@@ -114,7 +114,8 @@ Most of our real-time computation is performed directly on the 4 RP2040 motor co
 - One core is fully dedicated to executing the FOC control loop at high frequency
 - The second core handles all CAN transmit and receive operations
 
-#### MT6701_I2C Implementation
+**MT6701_I2C Implementation**
+
 This code implements an I²C interface driver for the MT6701 magnetic rotary encoder, allowing precise angle measurements to be read by a microcontroller. It supports initialization, raw angle register reads, angle conversion to radians, and I²C device scanning. The sensor is configured using resolution and bit-mapping parameters, and angle data is extracted from MSB/LSB registers via I²C. A built-in bus scan function can detect active I²C devices on the bus, useful for debugging sensor connectivity.
 
 ```cpp
@@ -276,7 +277,8 @@ void MT6701_I2C::i2c_scan() {
 }
 ```
 
-#### Core0 Main Implementation
+**Core0 Main Implementation**
+
 The `main` function initializes the motor control system and continuously runs the Field-Oriented Control (FOC) loop. It sets up standard I/O, launches the CAN communication handler on Core 1, and waits for configuration data over CAN before proceeding.
 
 ```cpp
@@ -444,7 +446,8 @@ int main() {
 }
 ```
 
-#### Phase Voltage Implementation
+**Phase Voltage Implementation**
+
 The `setPhaseVoltage` function applies Field-Oriented Control (FOC) to command the motor using direct-axis (`U_d`) and quadrature-axis (`U_q`) voltages.
 
 ```cpp
@@ -470,7 +473,8 @@ void StepperMotor::setPhaseVoltage(float Uq, float Ud, float angle_el) {
 }
 ```
 
-#### FOC Loop Implementation
+**FOC Loop Implementation**
+
 The `loopFOC` and `move` functions implement the core control logic of our Field-Oriented Control (FOC) system.
 
 ```cpp
@@ -617,7 +621,8 @@ void StepperMotor::move(float new_target) {
 }
 ```
 
-#### Angle Openloop Implementation
+**Angle Openloop Implementation**
+
 The `angleOpenloop` function allows the motor to rotate toward a desired angle without using sensor feedback.
 
 ```cpp
@@ -658,7 +663,8 @@ float StepperMotor::angleOpenloop(float target_angle){
 }
 ```
 
-#### Core1 Main Implementation
+**Core1 Main Implementation**
+
 On Core 1, the `core1_main` function listens for data from Core 0 (such as motor angle), formats it into a CAN message, and transmits it.
 
 ```cpp
@@ -704,7 +710,8 @@ void core1_main() {
 }
 ```
 
-#### CAN2040 Callback Implementation
+**CAN2040 Callback Implementation**
+
 The `can2040_cb` function is an interrupt-driven callback that handles CAN events on the RP2040.
 
 ```cpp
@@ -820,7 +827,8 @@ The robot controller firmware handles:
 - Streaming CAN bus responses back over WebSocket
 - Running the HTTP server
 
-#### REST Server Implementation
+**REST Server Implementation**
+
 This is the `start_rest_server` function that registers all our HTTP request handlers.
 
 ```c
@@ -890,7 +898,8 @@ err:
 }
 ```
 
-#### Motor Parameters Implementation
+**Motor Parameters Implementation**
+
 The `send_motor_params_over_can` function handles sending motor parameters over CAN.
 
 ```c

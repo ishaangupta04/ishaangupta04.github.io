@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Ishaan Gupta
-masthead_title: "Ishaan Gupta"
+masthead_title: "About"
 email: ishaan.gupta@berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
 github_username: ishaangupta04
@@ -59,10 +59,10 @@ plugins:
 author:
   name   : "Ishaan Gupta"
   avatar : "/assets/images/Headshot.jpg"
-  bio : ""
+  bio : "Senior Mechanical Engineering Undergraduate at UC Berkeley"
   location : "Berkeley, CA"
   links:
-    - label: "Email"
+    - label: "ishaan.gupta@berkeley.edu"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:ishaan.gupta@berkeley.edu"
     - label: "LinkedIn"
@@ -74,6 +74,15 @@ author:
 
 footer:
   links:
+    - label: "ishaan.gupta@berkeley.edu"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ishaan.gupta@berkeley.edu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ishaan-gupta-cal/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ishaangupta04"
 
 collections:
   projects:
