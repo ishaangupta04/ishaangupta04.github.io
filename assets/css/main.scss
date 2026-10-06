@@ -9,62 +9,24 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Project grid layout customization
-.layout--collection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-right: -1em;
-    margin-left: -1em;
-    
-    .grid__item {
-        margin: 1em;
-        
-        @include breakpoint($small) {
-            width: calc(100% - 2em);
-        }
+// Project cards use their own grid instead of the theme's float layout.
+.layout--collection .entries-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2em;
 
-        @include breakpoint($medium) {
-            width: calc(50% - 2em);
-        }
-
-        @include breakpoint($large) {
-            width: calc(50% - 2em);
-        }
-
-        .archive__item {
-            position: relative;
-            
-            .archive__item-teaser {
-                position: relative !important;
-                overflow: hidden !important;
-                padding-top: 75% !important; // This creates 4:3 ratio (75% = 3/4)
-                
-                img {
-                    position: absolute !important;
-                    top: 0 !important;
-                    left: 0 !important;
-                    width: 100% !important;
-                    height: 100% !important;
-                    object-fit: cover !important;
-                }
-            }
-        }
+    @include breakpoint($medium) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-}
 
-// Override minimal mistakes default image constraints
-.page__content {
-    .archive__item-teaser {
-        height: 450px !important;
-        max-height: none !important;
-        
-        img {
-            max-height: none !important;
-            width: 100% !important;
-            height: 100% !important;
-            object-fit: cover !important;
-        }
+    // Override the theme's widths, floats, and nth-child row margins.
+    .grid__item:nth-child(n) {
+        float: none;
+        clear: none;
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        margin-inline-start: 0;
     }
 }
 
