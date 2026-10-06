@@ -3,7 +3,6 @@ title: "eVSTOL: Tilt-Rotor Aircraft"
 excerpt: "A three-motor aircraft with tilting propulsion, a custom ESP32 flight controller, and a test stand for hover-control development"
 order: 8
 header:
-  image: /assets/images/eVSTOL/aircraft.jpg
   teaser: /assets/images/eVSTOL/aircraft.jpg
 sidebar:
   - title: "Role"

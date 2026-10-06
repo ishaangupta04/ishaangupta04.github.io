@@ -3,7 +3,6 @@ title: "ZVS Buck Converter with Variable-Step MPPT"
 excerpt: "A custom solar DC-DC converter combining resonant-transition soft switching, AC magnetics, and adaptive maximum power point tracking"
 order: 9
 header:
-  image: /assets/images/ZVS-Buck/converter-updated.jpg
   teaser: /assets/images/ZVS-Buck/converter-updated.jpg
 sidebar:
   - title: "Role"
