@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Ishaan Gupta"
   avatar : "/assets/images/Headshot.jpg"
-  bio : "Senior Mechanical Engineering Undergraduate at UC Berkeley"
+  bio : "Graduate Mechanical Engineering Undergraduate at UC Berkeley"
   location : "Berkeley, CA"
   links:
     - label: "ishaan.gupta@berkeley.edu"
