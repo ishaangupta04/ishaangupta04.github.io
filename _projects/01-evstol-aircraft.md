@@ -1,7 +1,7 @@
 ---
 title: "eVSTOL: Tilt-Rotor Aircraft"
 excerpt: "A three-motor aircraft with tilting propulsion, a custom ESP32 flight controller, and a test stand for hover-control development"
-order: 7
+order: 8
 header:
   image: /assets/images/eVSTOL/aircraft.jpg
   teaser: /assets/images/eVSTOL/aircraft.jpg
@@ -83,7 +83,7 @@ The propulsion system used three brushless motors and three ESCs, with OneShot12
 
 ### Attitude Estimation and Feedback
 
-The firmware was built on the madflight Arduino library, with custom configuration and actuator mixing for this aircraft. A Mahony attitude estimator processed IMU measurements to provide the attitude feedback used by the controller.
+The firmware was built on the [madflight Arduino flight-control library](https://madflight.com/), with custom configuration and actuator mixing for this aircraft. A Mahony attitude estimator processed IMU measurements to provide the attitude feedback used by the controller.
 
 Radio stick inputs established roll and pitch angle targets and a yaw-rate target. The firmware included proportional, integral, and derivative terms, integrator limits, and an integrator reset at minimum throttle. In the reported hover testing, the roll and pitch angle controllers used proportional gains of 0.30 and 0.45, with their integral and derivative gains set to zero.
 
