@@ -3,7 +3,7 @@ title: "Metal 3D-Printed Heat Sinks"
 excerpt: "An experimental comparison of six stainless-steel heat-sink geometries using infrared imaging and mass-normalized thermal analysis"
 order: 7
 header:
-  image: /assets/images/Heat-Sinks/DoritoChipsSingle.png
+  image: /assets/images/Heat-Sinks/all-sinks.png
   teaser: /assets/images/Heat-Sinks/group-photo.png
 sidebar:
   - title: "Focus"
@@ -59,6 +59,8 @@ Eight designs were originally planned, but only six survived printing and sinter
 {% include figure image_path="/assets/images/Heat-Sinks/HexPipes1.jpg" alt="Manufactured Hex Pipes heat sink with residual support material" caption="The Hex Pipes part retained support material after manufacturing, one of the limitations documented in the report." %}
 
 ## Experimental Setup
+
+{% include figure image_path="/assets/images/Heat-Sinks/experimental-setup.jpg" alt="Metal heat sinks on a hot plate with a thermal camera and laptop displaying infrared measurements" caption="Experimental setup with the printed heat sinks, hot plate, thermal camera, and data-acquisition laptop." %}
 
 ### Camera Calibration
 
