@@ -116,7 +116,7 @@ The input expression is a first-order buck sizing estimate. The output expressio
 | Output capacitance requirement | 40.47 µF |
 | Selected inductance | 1.88 µH |
 
-The proportionalities in my slides show why frequency and filter size have to be chosen together. At fixed duty cycle, voltage, and required current ripple:
+Switching frequency and filter size must be chosen together. At fixed duty cycle, voltage, and required current ripple:
 
 $$
 f_{\mathrm{sw}}\propto\frac{1}{L},\qquad
@@ -176,7 +176,7 @@ $$
 
 Here, $$N$$ is the turn count, $$A_{\min}$$ the minimum core cross-section, $$V_{c,e}$$ the effective core volume, $$\ell_t$$ the mean length per turn, and $$A_{w,\mathrm{act}}$$ the conductor cross-section. Winding resistance estimates copper loss; additional AC winding effects matter at these frequencies.
 
-My slide's turn-count tradeoff can be written more precisely, holding inductance, current, core geometry, frequency, and conductor cross-section fixed:
+The turn-count tradeoff follows these relationships when inductance, current, core geometry, frequency, and conductor cross-section are held fixed:
 
 $$
 R_w\propto N,\qquad P_{L,\mathrm{copper}}\propto N,\qquad
@@ -184,7 +184,7 @@ R_w\propto N,\qquad P_{L,\mathrm{copper}}\propto N,\qquad
 P_{L,\mathrm{core}}\propto\frac{1}{N^{\beta}}
 $$
 
-Thus, the slide's inverse-turn-count relationship for core loss expresses a decreasing trend; the Steinmetz exponent determines the actual scaling. More turns reduce flux swing and core loss, while adding wire increases copper loss. I iterated the turn count to balance the two around 141 kHz. Above that nominal frequency, core loss rises; below it, core loss falls and copper loss becomes relatively more significant.
+The Steinmetz exponent $$\beta$$ determines how quickly core loss decreases with turn count. More turns reduce flux swing and core loss, while adding wire increases copper loss. I iterated the turn count to balance the two around 141 kHz. Above that nominal frequency, core loss rises; below it, core loss falls and copper loss becomes relatively more significant.
 
 For a gap-dominated core, I used the following air-gap estimate:
 
@@ -268,10 +268,11 @@ The lookup table worked, but its calibration drifted between test sessions. A fu
 | Metric | Result |
 | --- | --- |
 | Weighted converter efficiency score | 88.7% |
-| Average MPPT power reported in the presentation | 90.7 W |
+| Average MPPT power | 90.7 W |
+| Dynamic MPPT test score | 70.94 W |
 | Power density | 2.825 W/cm³, third place |
 
-The efficiency score weights the nominal operating point and four corner points; it is distinct from a single operating-point efficiency. The final report measured 91.1% efficiency at the nominal point and a best measured corner efficiency of 93.8%. The presentation reports 90.7 W for average MPPT power, while the report records a dynamic MPPT test score of 70.94 W.
+The efficiency score weights the nominal operating point and four corner points; it is distinct from a single operating-point efficiency. Measured efficiency was 91.1% at the nominal point, with a best measured corner efficiency of 93.8%. Average MPPT power and the dynamic MPPT test score are separate reported metrics.
 
 {% include figure image_path="/assets/images/ZVS-Buck/efficiency-sweep.png" alt="Measured efficiency sweeps across converter operating conditions" caption="Measured efficiency sweeps from the converter characterization." %}
 
